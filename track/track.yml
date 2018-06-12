@@ -1,0 +1,34 @@
+id: g6ppk3r88l
+type: sandbox
+version: 0.0.1
+slug: play-with-cypress
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/cypress.png
+title: Play with Cypress
+teaser: Start testing Cypress!
+description: Fast, easy and reliable testing for anything that runs in a browser.
+tags: []
+challenges:
+- id: ey55r9wl6p
+  slug: sandbox
+  credits: 0
+  title: Sandbox
+  teaser: Play around with Cypress!
+  notes:
+  - type: text
+    title: Wait
+    contents: Please wait while we create a Cypress instance for you...
+  assignment: Run the default test suite!
+  difficulty: basic
+  timelimit: 300
+  tabs:
+  - type: service
+    title: Cypress
+    hostname: cypress
+    port: 9000
+    path: /vnc_lite.html?resize=remote
+  - type: terminal
+    title: Shell
+    hostname: cypress
+developers:
+- bas@instruqt.com
+published: false

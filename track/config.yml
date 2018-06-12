@@ -1,0 +1,11 @@
+template: containers
+configuration:
+  Containers:
+  - Environment: {}
+    Image: gcr.io/instruqt/cypress
+    Name: cypress
+    Ports:
+    - 9000
+    Resources:
+      Memory: 512
+    Shell: /bin/bash
