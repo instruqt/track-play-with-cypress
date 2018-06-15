@@ -7,5 +7,5 @@ configuration:
     Ports:
     - 9000
     Resources:
-      Memory: 512
-    Shell: /bin/bash
+      Memory: 1024
+    Shell: su - user

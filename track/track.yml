@@ -2,7 +2,7 @@ id: g6ppk3r88l
 type: sandbox
 version: 0.0.1
 slug: play-with-cypress
-icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/cypress.png
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/cypressjs.png
 title: Play with Cypress
 teaser: Start testing Cypress!
 description: Fast, easy and reliable testing for anything that runs in a browser.
@@ -15,7 +15,7 @@ challenges:
   teaser: Play around with Cypress!
   notes:
   - type: text
-    title: Wait
+    title: ""
     contents: Please wait while we create a Cypress instance for you...
   assignment: Run the default test suite!
   difficulty: basic
@@ -31,4 +31,5 @@ challenges:
     hostname: cypress
 developers:
 - bas@instruqt.com
-published: false
+- ezeedijk@xebia.com
+published: true
