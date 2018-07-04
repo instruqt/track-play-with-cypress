@@ -8,17 +8,58 @@ teaser: Start testing Cypress!
 description: Fast, easy and reliable testing for anything that runs in a browser.
 tags: []
 challenges:
+- id: ""
+  slug: navigation
+  title: Navigation
+  teaser: Using Cypress to navigate a page
+  notes:
+  - type: text
+    contents: Let's start with some navigation
+  - type: text
+    contents: |-
+      Cypress can navigate a page by first getting a DOM element using its CSS selector
+      and then simply performing the `click()` method, like so:
+      ```
+      cy.get('a.classExample').click() // This clicks a link anchor (a) with class "classExample"
+      ```
+  - type: text
+    contents: |-
+      To verify that you've landed on the correct page, you can chain an assertion on 
+      another element, for example:
+      ```
+      cy
+      .get('.classExample')
+      .click()
+      .get('div.contentDiv h1') // The element to assert on
+      .should('eq', 'SomeText') // The actual assertion
+      ```
+  difficulty: basic
+  assignment: |-
+    We've placed a *navigate.spec.js* file at *~/cypress/integration* to get you started.
+
+    Modify it to click the *Start learning* button on instruqt.com and check whether we've landed on the correct page
+    by asserting that the URL should equal *https://play.instruqt.com/public*
+
+    You can use the *cy.url()* method to get the current URL
+  timelimit: 300
+  tabs:
+  - type: service
+    title: Cypress
+    hostname: cypress
+    port: 9000
+    path: /vnc_lite.html?resize=remote
+  - type: terminal
+    title: Shell
+    hostname: cypress
 - id: ey55r9wl6p
   slug: sandbox
-  credits: 0
   title: Sandbox
   teaser: Play around with Cypress!
   notes:
   - type: text
-    title: ""
     contents: Please wait while we create a Cypress instance for you...
-  assignment: Run the default test suite!
   difficulty: basic
+  assignment: Run the default test suite!
   timelimit: 300
   tabs:
   - type: service
@@ -32,4 +73,5 @@ challenges:
 developers:
 - bas@instruqt.com
 - ezeedijk@xebia.com
+- tettaji@xebia.com
 published: true
