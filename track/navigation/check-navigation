@@ -1,0 +1,23 @@
+#!/bin/sh
+
+SPEC=/home/user/cypress/integration/navigate.spec.js
+
+# Check if "Start learning" button is clicked
+grep -Ez "\.get\(.a\.play.\)[[:space:]]*\.click\(\)" $SPEC
+
+if [ $? == 1 ]; then
+  echo "FAIL: The 'Start learning' button isn't clicked (element a.play)"
+  exit 1
+fi
+
+# Check if the correct URL is verified
+grep -Ez "\.url\(\)[[:space:]]*\.should\(.eq., ?.https:\/\/play\.instruqt\.com\/public.\)" $SPEC
+
+if [ $? == 1 ]; then
+  echo "FAIL: The URL isn't verified using should('eq', 'https://play.instruqt.com/public')"
+  exit 1
+fi
+
+# Check if the test has been executed successfully
+# TODO
+# grep logfile / reportje?

@@ -28,7 +28,7 @@ challenges:
       another element, for example:
       ```
       cy
-      .get('.classExample')
+      .get('a.classExample')
       .click()
       .get('div.contentDiv h1') // The element to assert on
       .should('eq', 'SomeText') // The actual assertion
@@ -41,6 +41,9 @@ challenges:
     by asserting that the URL should equal *https://play.instruqt.com/public*
 
     You can use the *cy.url()* method to get the current URL
+
+    Run your new test by clicking *navigate.spec.js* in the Cypress tab 
+
   timelimit: 300
   tabs:
   - type: service
