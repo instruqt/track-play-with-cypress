@@ -1,14 +1,14 @@
 #!/bin/sh
 
 cat > /home/user/cypress/integration/navigate.spec.js <<EOF
-describe('Login screen', () => {
+describe('Navigation', () => {
   beforeEach(() => {
     cy.visit('https://instruqt.com')
   })
 
   // https://on.cypress.io/interacting-with-elements
 
-  it('should navigate to the Teach page', () => {
+  it('Start learning should take you to the track overview', () => {
 
   })
 })
