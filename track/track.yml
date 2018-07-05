@@ -14,14 +14,16 @@ challenges:
   teaser: Using Cypress to navigate a page
   notes:
   - type: text
-    contents: Let's start with some navigation
+    contents: |-
+      Let's start with navigation
   - type: text
     contents: |-
       Cypress can navigate a page by first getting a DOM element using its CSS selector
       and then simply performing the `click()` method, like so:
       ```
-      cy.get('a.classExample').click() // This clicks a link anchor (a) with class "classExample"
+      cy.get('a.classExample').click()
       ```
+      This clicks a link anchor (a) with class "classExample".
   - type: text
     contents: |-
       To verify that you've landed on the correct page, you can chain an assertion on 
