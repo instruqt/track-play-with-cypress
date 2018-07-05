@@ -38,10 +38,10 @@ challenges:
   assignment: |-
     We've placed a *navigate.spec.js* file at *~/cypress/integration* to get you started.
 
-    Modify it to click the *Start learning* button on instruqt.com and check whether we've landed on the correct page
+    Modify it to click the **Start learning** button on instruqt.com and check whether we've landed on the correct page
     by asserting that the URL should equal *https://play.instruqt.com/public*
 
-    You can use the *cy.url()* method to get the current URL
+    You can use the `cy.url()` method to get the current URL
 
     Run your new test by clicking *navigate.spec.js* in the Cypress tab 
   timelimit: 300

@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+sleep 60
+
+echo "Creating template..."
 
 cat > /home/user/cypress/integration/navigate.spec.js <<EOF
 describe('Navigation', () => {
@@ -13,3 +16,10 @@ describe('Navigation', () => {
   })
 })
 EOF
+
+if [ $? == 1 ]; then
+  echo "Something went wrong when creating a template spec file"
+  exit 1
+fi
+
+exit 0
