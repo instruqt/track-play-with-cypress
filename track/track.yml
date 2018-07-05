@@ -8,14 +8,13 @@ teaser: Start testing Cypress!
 description: Fast, easy and reliable testing for anything that runs in a browser.
 tags: []
 challenges:
-- id: ""
+- id: wdvgxp5xenn7
   slug: navigation
   title: Navigation
   teaser: Using Cypress to navigate a page
   notes:
   - type: text
-    contents: |-
-      Let's start with navigation
+    contents: Let's start with navigation
   - type: text
     contents: |-
       Cypress can navigate a page by first getting a DOM element using its CSS selector
@@ -45,7 +44,6 @@ challenges:
     You can use the *cy.url()* method to get the current URL
 
     Run your new test by clicking *navigate.spec.js* in the Cypress tab 
-
   timelimit: 300
   tabs:
   - type: service
