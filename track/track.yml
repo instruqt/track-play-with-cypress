@@ -1,5 +1,5 @@
 id: g6ppk3r88l
-type: sandbox
+type: track
 version: 0.0.1
 slug: play-with-cypress
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/cypressjs.png
@@ -8,7 +8,7 @@ teaser: Start testing Cypress!
 description: Fast, easy and reliable testing for anything that runs in a browser.
 tags: []
 challenges:
-- id: wdvgxp5xenn7
+- id: uiydcwyfgjkc
   slug: navigation
   title: Navigation
   teaser: Using Cypress to navigate a page
@@ -24,26 +24,16 @@ challenges:
       ```
       This clicks a link anchor (a) with class "classExample".
   - type: text
-    contents: |-
-      To verify that you've landed on the correct page, you can chain an assertion on 
-      another element, for example:
-      ```
-      cy
-      .get('a.classExample')
-      .click()
-      .get('div.contentDiv h1') // The element to assert on
-      .should('eq', 'SomeText') // The actual assertion
-      ```
+    contents: "To verify that you've landed on the correct page, you can chain an
+      assertion on \nanother element, for example:\n```\ncy\n.get('a.classExample')\n.click()\n.get('div.contentDiv
+      h1') // The element to assert on\n.should('eq', 'SomeText') // The actual assertion\n```"
   difficulty: basic
-  assignment: |-
-    We've placed a *navigate.spec.js* file at *~/cypress/integration* to get you started.
-
-    Modify it to click the **Start learning** button on instruqt.com and check whether we've landed on the correct page
-    by asserting that the URL should equal *https://play.instruqt.com/public*
-
-    You can use the `cy.url()` method to get the current URL
-
-    Run your new test by clicking *navigate.spec.js* in the Cypress tab 
+  assignment: "We've placed a *navigate.spec.js* file at *~/cypress/integration* to
+    get you started.\n\nModify it to click the **Start learning** button on instruqt.com
+    and check whether we've landed on the correct page\nby asserting that the URL
+    should equal *https://play.instruqt.com/public*\n\nYou can use the `cy.url()`
+    method to get the current URL\n\nRun your new test by clicking *navigate.spec.js*
+    in the Cypress tab "
   timelimit: 600
   tabs:
   - type: service
