@@ -8,32 +8,42 @@ teaser: Start testing Cypress!
 description: Fast, easy and reliable testing for anything that runs in a browser.
 tags: []
 challenges:
-- id: okykpyyde1gw
+- id: wdvgxp5xenn7
   slug: navigation
   title: Navigation
   teaser: Using Cypress to navigate a page
   notes:
   - type: text
-    contents: Let's start with some navigation
+    contents: Let's start with navigation
   - type: text
     contents: |-
       Cypress can navigate a page by first getting a DOM element using its CSS selector
       and then simply performing the `click()` method, like so:
       ```
-      cy.get('a.classExample').click() // This clicks a link anchor (a) with class "classExample"
+      cy.get('a.classExample').click()
       ```
+      This clicks a link anchor (a) with class "classExample".
   - type: text
-    contents: "To verify that you've landed on the correct page, you can chain an
-      assertion on \nanother element, for example:\n```\ncy\n.get('.classExample')\n.click()\n.get('div.contentDiv
-      h1') // The element to assert on\n.should('eq', 'SomeText') // The actual assertion\n```"
+    contents: |-
+      To verify that you've landed on the correct page, you can chain an assertion on 
+      another element, for example:
+      ```
+      cy
+      .get('a.classExample')
+      .click()
+      .get('div.contentDiv h1') // The element to assert on
+      .should('eq', 'SomeText') // The actual assertion
+      ```
   difficulty: basic
   assignment: |-
     We've placed a *navigate.spec.js* file at *~/cypress/integration* to get you started.
 
-    Modify it to click the *Start learning* button on instruqt.com and check whether we've landed on the correct page
+    Modify it to click the **Start learning** button on instruqt.com and check whether we've landed on the correct page
     by asserting that the URL should equal *https://play.instruqt.com/public*
 
-    You can use the *cy.url()* method to get the current URL
+    You can use the `cy.url()` method to get the current URL
+
+    Run your new test by clicking *navigate.spec.js* in the Cypress tab 
   timelimit: 600
   tabs:
   - type: service

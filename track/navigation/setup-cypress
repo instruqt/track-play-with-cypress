@@ -1,16 +1,25 @@
-#!/bin/sh
+#!/bin/bash
+sleep 60
+
+echo "Creating template..."
 
 cat > /home/user/cypress/integration/navigate.spec.js <<EOF
-describe('Login screen', () => {
+describe('Navigation', () => {
   beforeEach(() => {
     cy.visit('https://instruqt.com')
   })
 
   // https://on.cypress.io/interacting-with-elements
 
-  it('should navigate to the Teach page', () => {
+  it('Start learning should take you to the track overview', () => {
 
   })
 })
-
 EOF
+
+if [ $? == 1 ]; then
+  echo "Something went wrong when creating a template spec file"
+  exit 1
+fi
+
+exit 0
