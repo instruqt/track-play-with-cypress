@@ -8,7 +8,7 @@ teaser: Start testing Cypress!
 description: Fast, easy and reliable testing for anything that runs in a browser.
 tags: []
 challenges:
-- id: ""
+- id: okykpyyde1gw
   slug: navigation
   title: Navigation
   teaser: Using Cypress to navigate a page
@@ -23,16 +23,9 @@ challenges:
       cy.get('a.classExample').click() // This clicks a link anchor (a) with class "classExample"
       ```
   - type: text
-    contents: |-
-      To verify that you've landed on the correct page, you can chain an assertion on 
-      another element, for example:
-      ```
-      cy
-      .get('.classExample')
-      .click()
-      .get('div.contentDiv h1') // The element to assert on
-      .should('eq', 'SomeText') // The actual assertion
-      ```
+    contents: "To verify that you've landed on the correct page, you can chain an
+      assertion on \nanother element, for example:\n```\ncy\n.get('.classExample')\n.click()\n.get('div.contentDiv
+      h1') // The element to assert on\n.should('eq', 'SomeText') // The actual assertion\n```"
   difficulty: basic
   assignment: |-
     We've placed a *navigate.spec.js* file at *~/cypress/integration* to get you started.
@@ -41,7 +34,7 @@ challenges:
     by asserting that the URL should equal *https://play.instruqt.com/public*
 
     You can use the *cy.url()* method to get the current URL
-  timelimit: 300
+  timelimit: 600
   tabs:
   - type: service
     title: Cypress
@@ -60,7 +53,7 @@ challenges:
     contents: Please wait while we create a Cypress instance for you...
   difficulty: basic
   assignment: Run the default test suite!
-  timelimit: 300
+  timelimit: 600
   tabs:
   - type: service
     title: Cypress

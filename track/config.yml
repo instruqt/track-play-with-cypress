@@ -7,5 +7,5 @@ configuration:
     Ports:
     - 9000
     Resources:
-      Memory: 1024
+      Memory: 2048
     Shell: su - user
