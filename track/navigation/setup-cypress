@@ -1,5 +1,11 @@
 #!/bin/bash
-sleep 60
+
+echo "Waiting for Cypress..."
+TIMEOUT=1
+until [ -d "/home/user/cypress/integration" ] || [ $TIMEOUT == 60 ]; then
+  sleep 1
+  let TIMEOUT=$TIMEOUT+1
+fi
 
 echo "Creating template..."
 

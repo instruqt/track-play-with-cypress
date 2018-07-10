@@ -25,7 +25,8 @@ RUN apt-get install -y \
 RUN apt-get install -y \
     libgconf-2-4 \
     libnss3 \
-    libxss1
+    libxss1 \
+    xvfb
 RUN apt-get install -y \
     libasound2
 
