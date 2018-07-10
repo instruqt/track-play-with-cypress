@@ -44,6 +44,10 @@ challenges:
   - type: terminal
     title: Shell
     hostname: cypress
+  - type: service
+    title: Editor
+    hostname: cypress
+    port: 6800
 - id: ey55r9wl6p
   slug: sandbox
   title: Sandbox

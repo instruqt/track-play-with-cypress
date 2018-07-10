@@ -1,0 +1,48 @@
+{
+    "problems-panel": {
+        "visible": false
+    },
+    "welcomeProjects": [
+    ],
+    "projectPath": "/projects/",
+    "afterFirstLaunch": "true",
+    "project": {
+        "/projects/": {
+            "openFiles": [],
+            "code-folding.folds": {},
+            "mainView.state": {
+                "orientation": null,
+                "activePaneId": "first-pane",
+                "splitPercentage": 1,
+                "panes": {
+                    "first-pane": []
+                }
+            }
+        }
+    },
+    "HealthData.Logs": {
+        "fileStats": {
+            "openedFileExt": {
+            },
+            "workingSetFileExt": {
+            }
+        },
+        "ProjectDetails": {
+        }
+    },
+    "sidebar": {
+        "visible": true
+    },
+    "nextHealthDataSendTime": 1519749868472,
+    "workingSetSortMethod": "cmd.sortWorkingSetByAdded",
+    "auto-install-extensions": {},
+    "extensionUpdateInfo": [],
+    "lastExtensionRegistryCheckTime": 1519662865771,
+    "recentProjects": [
+    ],
+    "healthDataNotificationShown": true,
+    "UUID": "e5fc845c-b122-439c-b84f-6f1bc46a332b",
+    "brackets-git.lastVersion": "0.16.5",
+    "brackets-git.currentGitRoot": "/projects/",
+    "brackets-git.currentGitSubfolder": ""
+}

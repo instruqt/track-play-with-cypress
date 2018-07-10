@@ -2,10 +2,11 @@ template: containers
 configuration:
   Containers:
   - Environment: {}
-    Image: gcr.io/instruqt/cypress
+    Image: tettaji/instruqt-cypress:latest
     Name: cypress
     Ports:
     - 9000
+    - 6800
     Resources:
       Memory: 2048
     Shell: su - user
