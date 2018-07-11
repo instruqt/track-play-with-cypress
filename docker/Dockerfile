@@ -30,12 +30,13 @@ RUN apt-get install -y \
 RUN apt-get install -y \
     libasound2
 
-COPY --from=whogloo/nodespeed-ide:latest /var/brackets-server/brackets-dist/ /var/brackets-server/brackets-dist/
-COPY --from=whogloo/nodespeed-ide:latest /var/brackets-server/brackets-srv/ /var/brackets-server/brackets-srv/
+COPY --from=whogloo/nodespeed-ide:latest /var/brackets-server/ /var/brackets-server/
 
-ADD brackets-server /root/.brackets-server
+ADD brackets-server /home/user/.brackets-server
 
-RUN /root/.brackets-server/install-extensions.sh
+RUN chown -R user:user /home/user/.brackets-server && \
+    /home/user/.brackets-server/install-extensions.sh && \
+    chown -R user:user /var/brackets-server
 
 WORKDIR /home/user
 USER user

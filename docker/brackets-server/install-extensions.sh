@@ -4,7 +4,7 @@
 echo "Installing default nodedSpeed IDE extensions installed."
 
 
-cd /root/.brackets-server/extensions/user
+cd /home/user/.brackets-server/extensions/user
 
 git clone https://github.com/Jacse/themes-for-brackets.git
 cd themes-for-brackets

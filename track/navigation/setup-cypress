@@ -2,10 +2,10 @@
 
 echo "Waiting for Cypress..."
 TIMEOUT=1
-until [ -d "/home/user/cypress/integration" ] || [ $TIMEOUT == 60 ]; then
+until [ -d "/home/user/cypress/integration" ] || [ $TIMEOUT == 60 ]; do
   sleep 1
   let TIMEOUT=$TIMEOUT+1
-fi
+done
 
 echo "Creating template..."
 
