@@ -2,7 +2,7 @@ template: containers
 configuration:
   Containers:
   - Environment: {}
-    Image: tettaji/instruqt-cypress:latest
+    Image: ezeedijk/instruqt-cypress:latest
     Name: cypress
     Ports:
     - 9000
