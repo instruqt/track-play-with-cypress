@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SPEC=/home/user/cypress/integration/navigate.spec.js
+RESULTS=/home/user/results.json
 
 # Check if "Start learning" button is clicked
 grep -Ez "\.get\(.a\.play.\)[[:space:]]*\.click\(\)" $SPEC
@@ -18,6 +19,14 @@ if [ $? == 1 ]; then
   exit 1
 fi
 
+/home/user/node_modules/cypress/bin/cypress run > results.json
+
+grep -Ez "XVFB" $RESULTS
+
+if [ $? == 1 ]; then
+  fail-message "Test result is failed"
+  exit 1
+fi
 # Check if the test has been executed successfully
 # TODO
 # grep logfile / reportje?
