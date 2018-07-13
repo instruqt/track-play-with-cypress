@@ -34,7 +34,7 @@ challenges:
     should equal *https://play.instruqt.com/public*\n\nYou can use the `cy.url()`
     method to get the current URL\n\nRun your new test by clicking *navigate.spec.js*
     in the Cypress tab "
-  timelimit: 600
+  timelimit: 3600
   tabs:
   - type: service
     title: Cypress
@@ -57,7 +57,7 @@ challenges:
     contents: Please wait while we create a Cypress instance for you...
   difficulty: basic
   assignment: Run the default test suite!
-  timelimit: 600
+  timelimit: 3600
   tabs:
   - type: service
     title: Cypress
