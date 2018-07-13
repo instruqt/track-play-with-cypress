@@ -4,10 +4,10 @@ SPEC=/home/user/cypress/integration/navigate.spec.js
 RESULTS=/home/user/results.json
 
 # Check if "Start learning" button is clicked
-grep -Ez "\.get\(.a\.play.\)[[:space:]]*\.click\(\)" $SPEC
+grep -Ez "\.get\(.a\.play.\).*\.click\(\)" $SPEC
 
 if [ $? == 1 ]; then
-  fail-message "The 'Start learning' button isn't clicked (element a.play)"
+  fail-message "The 'Start learning' button isn't clicked (hint: the first a.play element)"
   exit 1
 fi
 
