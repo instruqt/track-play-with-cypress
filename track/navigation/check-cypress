@@ -19,7 +19,7 @@ if [ $? == 1 ]; then
   exit 1
 fi
 
-/home/user/node_modules/cypress/bin/cypress run > results.json
+/home/user/node_modules/cypress/bin/cypress run --spec $SPEC > $RESULTS
 
 grep -Ez "XVFB" $RESULTS
 
