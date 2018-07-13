@@ -44,5 +44,5 @@ USER user
 RUN npm install --save-dev cypress
 
 USER root
-
+RUN ln -s /home/user/cypress/integration/ /projects
 ADD start.sh /start.sh

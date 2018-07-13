@@ -23,6 +23,8 @@ describe('Navigation', () => {
 })
 EOF
 
+chown -R user:user /projects/*
+
 if [ $? == 1 ]; then
   echo "Something went wrong when creating a template spec file"
   exit 1
